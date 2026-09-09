@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Para você, Karlita ♡</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080810;color:#f7f3f5;font-family:Georgia,serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 20% 20%,#36203d55,transparent 35%),radial-gradient(circle at 80% 70%,#1d334955,transparent 35%);pointer-events:none}
+section{min-height:100vh;padding:80px 22px;display:flex;align-items:center;justify-content:center;position:relative}
+.card{max-width:850px;width:100%;text-align:center}
+.kicker{letter-spacing:4px;text-transform:uppercase;font:12px Arial,sans-serif;opacity:.65}
+h1{font-size:clamp(48px,10vw,100px);font-weight:400;margin:18px 0;line-height:.95}
+h2{font-size:clamp(32px,6vw,58px);font-weight:400;margin:12px 0 25px}
+p{font:18px/1.8 Arial,sans-serif;color:#ddd;max-width:700px;margin:15px auto}
+button{border:1px solid #ffffff33;background:#ffffff0d;color:white;border-radius:999px;padding:14px 24px;font-size:15px;cursor:pointer;transition:.3s}
+button:hover{background:#fff;color:#111;transform:translateY(-2px)}
+#stars{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;opacity:.6;animation:twinkle 3s infinite}
+@keyframes twinkle{50%{opacity:.15;transform:scale(.5)}} .hidden{display:none}
+.line{height:1px;background:#ffffff22;margin:35px auto;max-width:500px}
+.timeline{display:grid;gap:14px;text-align:left;margin-top:35px}
+.item{padding:20px;border:1px solid #ffffff15;border-radius:18px;background:#ffffff08}
+.item b{font:12px Arial;text-transform:uppercase;letter-spacing:2px;opacity:.6}
+.item strong{display:block;font-size:22px;margin:7px 0}
+.photos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:30px}
+.photo{aspect-ratio:1/1;border-radius:18px;background:linear-gradient(135deg,#241a27,#11151f);display:flex;align-items:center;justify-content:center;color:#aaa;font:14px Arial;padding:15px}
+.bigquote{font-size:clamp(28px,5vw,48px);line-height:1.25;margin:35px 0}
+.heart{font-size:50px;animation:pulse 1.8s infinite}@keyframes pulse{50%{transform:scale(1.12)}}
+footer{padding:35px;text-align:center;font:12px Arial;color:#777}
+@media(max-width:600px){.photos{grid-template-columns:1fr}.item{padding:17px}}
+</style>
+</head>
+<body>
+<div id="stars"></div>
+
+<section id="home">
+<div class="card">
+<div class="kicker">um pequeno lugar feito para você</div>
+<h1>Para você,<br>Karlita.</h1>
+<p>Hoje eu queria te entregar alguma coisa diferente.</p>
+<button onclick="document.querySelector('#music').scrollIntoView()">começar ♡</button>
+</div>
+</section>
+
+<section id="music">
+<div class="card">
+<div class="kicker">01 · a nossa música</div>
+<h2>Se nossa história tivesse uma música...</h2>
+<p>Eu escolheria uma que me fizesse lembrar de você sempre que tocasse.</p>
+<div class="line"></div>
+<p><b>♫ COLOQUE AQUI A MÚSICA DE VOCÊS</b></p>
+<p>Use este espaço para explicar por que essa música lembra você dela.</p>
+<button onclick="document.querySelector('#story').scrollIntoView()">continuar →</button>
+</div>
+</section>
+
+<section id="story">
+<div class="card">
+<div class="kicker">02 · nossa história</div>
+<h2>Alguns capítulos de nós</h2>
+<div class="timeline">
+<div class="item"><b>O começo</b><strong>Onde tudo começou</strong><span>Escreva aqui como vocês se conheceram.</span></div>
+<div class="item"><b>Depois</b><strong>Uma memória inesquecível</strong><span>Coloque aqui uma lembrança que só vocês entendem.</span></div>
+<div class="item"><b>Hoje</b><strong>Ainda nós</strong><span>Mesmo com a distância, algumas pessoas continuam perto de um jeito diferente.</span></div>
+</div>
+<button onclick="document.querySelector('#gallery').scrollIntoView()" style="margin-top:28px">próximo →</button>
+</div>
+</section>
+
+<section id="gallery">
+<div class="card">
+<div class="kicker">03 · memórias</div>
+<h2>Coisas que eu guardaria de novo</h2>
+<div class="photos">
+<div class="photo">📷 COLOQUE UMA FOTO AQUI</div>
+<div class="photo">📷 COLOQUE UMA FOTO AQUI</div>
+<div class="photo">📷 COLOQUE UMA FOTO AQUI</div>
+<div class="photo">📷 COLOQUE UMA FOTO AQUI</div>
+</div>
+<button onclick="document.querySelector('#distance').scrollIntoView()" style="margin-top:28px">continuar →</button>
+</div>
+</section>
+
+<section id="distance">
+<div class="card">
+<div class="kicker">04 · apesar da distância</div>
+<h2>Entre dois lugares</h2>
+<div class="bigquote">“Existem quilômetros entre nós, mas eles nunca conseguiram medir o tamanho do que eu sinto.”</div>
+<p>Brasil <span style="opacity:.5">──────── ♡ ────────</span> Portugal</p>
+<button onclick="document.querySelector('#future').scrollIntoView()">ainda não acabou →</button>
+</div>
+</section>
+
+<section id="future">
+<div class="card">
+<div class="kicker">05 · o que ainda vem</div>
+<h2>A lista ainda está incompleta.</h2>
+<div class="timeline">
+<div class="item">☐ Um aniversário juntos</div>
+<div class="item">☐ Uma foto juntos</div>
+<div class="item">☐ Um dia inteiro sem precisar dizer “até logo”</div>
+<div class="item">☐ Todas as coisas que ainda vamos viver</div>
+</div>
+<button onclick="document.querySelector('#final').scrollIntoView()" style="margin-top:28px">última página →</button>
+</div>
+</section>
+
+<section id="final">
+<div class="card">
+<div class="heart">♡</div>
+<div class="kicker">06 · para terminar</div>
+<h2>Feliz aniversário.</h2>
+<p>Eu queria poder estar aí hoje. Queria ver seu sorriso, te abraçar e comemorar esse dia do seu lado.</p>
+<p>Como a distância não deixa, fiz este pequeno lugar para você. Um lugar que você pode voltar quando quiser, sempre que sentir saudade.</p>
+<div class="line"></div>
+<p style="font-size:22px">Espero que seu novo ano seja lindo.<br>E espero poder fazer parte dele.</p>
+<p><b>Com carinho,<br>Brenno ♡</b></p>
+</div>
+</section>
+
+<footer>feito especialmente para você ♡</footer>
+<script>
+for(let i=0;i<90;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=(Math.random()*3)+'s';document.getElementById('stars').appendChild(s)}
+</script>
+</body>
+</html>
